@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACA CC Practice </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #ccc 3px solid;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .content {
+      padding: 20px;
+      background: #fff;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
+    .question {
+      margin-bottom: 10px;
+    }
+
+    .question p {
+      margin: 0;
+    }
+
+    .answers {
+      margin: 10px 0;
+    }
+
+    .answers label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #555;
+    }
+    footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer-content {
+            margin: 0;
+            padding: 0;
+        }
+        .footer-content a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+        .follow-github {
+            margin-bottom: 20px;
+        }
+        .follow-github a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .follow-github a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>ACA CC Practice</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <form id="quiz-form">
+        <!-- Question 1 -->
+        <div class="question">
+          <p>1. A large shopping mall deploys a new video surveillance system. The five-floor building in which the mall
+            is located installed 35 HD cameras to monitor the major exits. The surveillance system is deployed on an ECS
+            instance, which has four 2 TB data disks to store video data. However, video data grows so rapidly, the
+            engineers find the ECS will run out of storage space within 2 weeks. In this case, what will be the best
+            solution for addressing the storage challenge while ensuring quick access to historical video data when
+            needed?</p>
+          <div class="answers">
+            <label><input type="radio" name="q1" value="A"> A. Container Service</label>
+            <label><input type="radio" name="q1" value="B"> B. ECS</label>
+            <label><input type="radio" name="q1" value="C"> C. OSS</label>
+            <label><input type="radio" name="q1" value="D"> D. CON</label>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+          <p>2. Which of the following statements about OSS buckets is NOT correct?</p>
+          <div class="answers">
+            <label><input type="radio" name="q2" value="A"> A. Every user can create more than one bucket</label>
+            <label><input type="radio" name="q2" value="B"> B. Bucket names can be changed after creation.</label>
+            <label><input type="radio" name="q2" value="C"> C. Every bucket should have a unique name</label>
+            <label><input type="radio" name="q2" value="D"> D. There is no limitation on the number of objects inside a
+              bucket.</label>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+          <p>3. Company 8 builds a music download website based on OSS and ECS, and users can download mp3 files after
+            registering for the website. Recently, the public network traffic to OSS has doubled, but the increase in
+            registered users is less than 10%. After in-depth analysis, engineers find that many users' download
+            requests are raised from a search engine rather than the website itself. In this case, which of the
+            following measures could help to address this issue?</p>
+          <div class="answers">
+            <label><input type="radio" name="q3" value="A"> A. Migrate music files from OSS to ECS instance
+              disks.</label>
+            <label><input type="radio" name="q3" value="B"> B. Change the website access mode to HTTPS.</label>
+            <label><input type="radio" name="q3" value="C"> C. Setup 'Hotlink Protection' in OSS, and use an HTTP
+              Referrer whitelist to prevent unauthorized users from accessing your data in OSS.</label>
+            <label><input type="radio" name="q3" value="D"> D. Introduce SLB for extra protection.</label>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+          <p>4. Alibaba Cloud Object Storage Service (OSS) is a massive, highly available, secure, and cost-effective
+            storage service. One of the special characteristics of OSS is its superior data reliability, because of its
+            underlying backup technology and policies. Which of the following statements about OSS backup is correct?
+          </p>
+          <div class="answers">
+            <label><input type="radio" name="q4" value="A"> A. OSS supports 3 internal data copies, so the data can be
+              manually recovered should there be any problem.</label>
+            <label><input type="radio" name="q4" value="B"> B. Customer has to safeguard their own data. OSS provides
+              various backup interfaces to facilitate offsite backups.</label>
+            <label><input type="radio" name="q4" value="C"> C. OSS leverages RAID0+1 configuration of its underlying
+              physical hard disks. There is no impact even if 2 hard disks were to fail simultaneously.</label>
+            <label><input type="radio" name="q4" value="D"> D. OSS supports 3 internal data copies, no human
+              intervention is required to recover the data when anything goes wrong.</label>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+          <p>5. In Alibaba Cloud Object Storage Service (OSS), users want to use graphical tools to upload and download
+            object files. Which tool can they use?</p>
+          <div class="answers">
+            <label><input type="radio" name="q5" value="A"> A. ossbrowser</label>
+            <label><input type="radio" name="q5" value="B"> B. onsutil</label>
+            <label><input type="radio" name="q5" value="C"> C. obscmd</label>
+            <label><input type="radio" name="q5" value="D"> D. ossfs</label>
+          </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+          <p>7. When purchasing a Classic Load Balancer (CLB) instance, which of the following is NOT correct?</p>
+          <div class="answers">
+            <label><input type="radio" name="q7" value="A"> A. Users will need to choose an appropriate CLB instance
+              specification.</label>
+            <label><input type="radio" name="q7" value="B"> B. Users will have to estimate traffic needs in
+              advance.</label>
+            <label><input type="radio" name="q7" value="C"> C. Users will need to know their peak expected QPS (queries
+              per second) in advance.</label>
+            <label><input type="radio" name="q7" value="D"> D. Users will not need to do anything: CLB scales
+              automatically.</label>
+          </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+          <p>8. Applications or websites with users from different parts of the world will require low latency and high
+            availability (HA) with multi-regional disaster recovery. In this scenario, besides Auto Scaling, which of
+            the following services is also suggested to be used along with Server Load Balancer to support
+            multi-regional Disaster Recovery?</p>
+          <div class="answers">
+            <label><input type="radio" name="q8" value="A"> A. Alibaba Cloud DNS</label>
+            <label><input type="radio" name="q8" value="B"> B. MaxCompute</label>
+            <label><input type="radio" name="q8" value="C"> C. RDS</label>
+            <label><input type="radio" name="q8" value="D"> D. DataV</label>
+          </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+          <p>9. On Alibaba Cloud, security responsibilities are split between Alibaba Cloud and its users. Alibaba Cloud
+            is responsible for infrastructure security (physical security at Alibaba Cloud datacenters, secure product
+            design, security of the user authentication layer, and so on). Alibaba Cloud users are responsible for
+            securely configuring Alibaba Cloud products and for maintaining and securing any software they install on
+            ECS instances. Which of the following customer behaviors do you think is the most secure?</p>
+          <div class="answers">
+            <label><input type="radio" name="q9" value="A"> A. To make administration easier, set admin passwords to
+              "123456".</label>
+            <label><input type="radio" name="q9" value="B"> B. After purchasing an ECS instance, immediately set
+              Security Group rules which restrict access to a trusted IP address range.</label>
+            <label><input type="radio" name="q9" value="C"> C. Allow multiple administrators to share a single
+              administrator account.</label>
+            <label><input type="radio" name="q9" value="D"> D. To make things easier for database administrators (DBAs),
+              enable public access to RDS instances.</label>
+          </div>
+        </div>
+
+
+
+        <!-- Question 10 -->
+        <div class="question">
+          <p>10. Which of the following statements is true for RDS?</p>
+          <div class="answers">
+            <label><input type="radio" name="q10" value="A"> A. Multiple databases can be created in one RDS
+              instance</label>
+            <label><input type="radio" name="q10" value="B"> B. Databases with the same name are allowed in the same
+              instance.</label>
+            <label><input type="radio" name="q10" value="C"> C. Resources are not shared among the databases in the same
+              RDS instance.</label>
+            <label><input type="radio" name="q10" value="D"> D. None of the above is true</label>
+          </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+          <p>11. Auto Scaling is a management service that can automatically adjust elastic computing resources based on
+            your business needs and policies. It supports adding an existing ECS instance into the scaling group but
+            imposes certain requirements on instance region. In this case, which of the following statements is true?
+          </p>
+          <div class="answers">
+            <label><input type="radio" name="q11" value="A"> A. The instance and the scaling group must be in the same
+              region but not necessarily the same zone.</label>
+            <label><input type="radio" name="q11" value="B"> B. The instance and the scaling group must be in the same
+              region and zone.</label>
+            <label><input type="radio" name="q11" value="C"> C. The instance and the scaling group can be in different
+              regions and zones.</label>
+            <label><input type="radio" name="q11" value="D"> D. Each scaling group can span up to two regions. After
+              adding the ECS instance, the number of regions of all the ECS instances in the scaling group must be no
+              greater than two.</label>
+          </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+          <p>12. Some types of applications may encounter large fluctuations in demand. When ECS is used with _____, the
+            number of ECS instances can be automatically adjusted based on traffic.</p>
+          <div class="answers">
+            <label><input type="radio" name="q12" value="A"> A. Server Load Balancer</label>
+            <label><input type="radio" name="q12" value="B"> B. ROS</label>
+            <label><input type="radio" name="q12" value="C"> C. Auto Scaling</label>
+            <label><input type="radio" name="q12" value="D"> D. OSS</label>
+          </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+          <p>13. Anti-DDoS is one of Alibaba Cloud's primary security products. DDoS attacks are very common, so an
+            accurate understanding of DDoS is crucial to protecting websites. Which of the following descriptions of
+            DDoS attacks is the most accurate one?</p>
+          <div class="answers">
+            <label><input type="radio" name="q13" value="A"> A. The main target for DDoS attack is the database.</label>
+            <label><input type="radio" name="q13" value="B"> B. DDoS attacks focus on password cracking.</label>
+            <label><input type="radio" name="q13" value="C"> C. The main purpose of a DDoS attack is to make the target
+              server unable to respond to normal requests. This type of attack is very difficult to defend
+              against.</label>
+            <label><input type="radio" name="q13" value="D"> D. The purpose of DDoS attacks is to steal confidential
+              information.</label>
+          </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+          <p>14. Alibaba Cloud's Auto Scaling can be used in conjunction with ECS, RDS, SLB, etc. Which of the following
+            statements is correct?</p>
+          <div class="answers">
+            <label><input type="radio" name="q14" value="A"> A. Auto Scaling must be used with Server Load Balancer
+              (SLB).</label>
+            <label><input type="radio" name="q14" value="B"> B. Auto Scaling must be used with ECS (other services are
+              optional).</label>
+            <label><input type="radio" name="q14" value="C"> C. Auto Scaling must be used with ROS.</label>
+            <label><input type="radio" name="q14" value="D"> D. Auto Scaling must be used with both RDS and ECS
+              together.</label>
+          </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+          <p>15. Alibaba Cloud provides different Anti-DDoS service tiers. If attacks larger than 5 Gbps are expected,
+            which of the following is the best Anti-DDoS product to use?</p>
+          <div class="answers">
+            <label><input type="radio" name="q15" value="A"> A. Anti-DDoS Origin Basic</label>
+            <label><input type="radio" name="q15" value="B"> B. KMS</label>
+            <label><input type="radio" name="q15" value="C"> C. SSL</label>
+            <label><input type="radio" name="q15" value="D"> D. Anti-DDoS Pro/Premium</label>
+          </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+          <p>16. In order to migrate an on-premise database to Alibaba Cloud RDS, _____ can be used to facilitate quick
+            migration.</p>
+          <div class="answers">
+            <label><input type="radio" name="q16" value="A"> A. Cloud Monitor</label>
+            <label><input type="radio" name="q16" value="B"> B. DBS (Database Backup Service)</label>
+            <label><input type="radio" name="q16" value="C"> C. DTS (Data Transmission Service)</label>
+            <label><input type="radio" name="q16" value="D"> D. DMS (Data Management Service)</label>
+          </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+          <p>17. Which of the following is NOT a database engine supported by RDS?</p>
+          <div class="answers">
+            <label><input type="radio" name="q17" value="A"> A. MySQL</label>
+            <label><input type="radio" name="q17" value="B"> B. SQL Server</label>
+            <label><input type="radio" name="q17" value="C"> C. PostgreSQL</label>
+            <label><input type="radio" name="q17" value="D"> D. Oracle</label>
+          </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+          <p>18. The _____ feature in Application Load Balancer means that it can forward the access requests from a
+            single user to the same ECS instance within a certain period to ensure session continuity.</p>
+          <div class="answers">
+            <label><input type="radio" name="q18" value="A"> A. Session persistence</label>
+            <label><input type="radio" name="q18" value="B"> B. Health check</label>
+            <label><input type="radio" name="q18" value="C"> C. Weighted Round Robin</label>
+            <label><input type="radio" name="q18" value="D"> D. Least connections scheduling</label>
+          </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+          <p>19. A developer is trying to load balance HTTP traffic across its container services deployed within
+            Alibaba Cloud. This traffic exceeds 1 million QPS. Which of the following can be used to support this level
+            of traffic, while removing Single Point of Failure (SPOF)?</p>
+          <div class="answers">
+            <label><input type="radio" name="q19" value="A"> A. Classic Load Balancer</label>
+            <label><input type="radio" name="q19" value="B"> B. Application Load Balancer</label>
+            <label><input type="radio" name="q19" value="C"> C. Elastic Compute Service</label>
+            <label><input type="radio" name="q19" value="D"> D. Elastic Container Instances</label>
+          </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+          <p>20. Cloud Disk is a data storage product provided by Alibaba Cloud. Cloud Disks are used for storage by all
+            ECS instance types and by some RDS database instances. Which of the following statements about Cloud Disk is
+            true?</p>
+          <div class="answers">
+            <label><input type="radio" name="q20" value="A"> A. Cloud Disks can be attached to ECS instances that are in
+              a different Region than the disk.</label>
+            <label><input type="radio" name="q20" value="B"> B. Cloud Disks can be attached to ECS instances under the
+              same Alibaba Cloud account and within the same Zone as the Cloud Disk.</label>
+            <label><input type="radio" name="q20" value="C"> C. Cloud Disks cannot be moved between ECS
+              instances.</label>
+            <label><input type="radio" name="q20" value="D"> D. Cloud Disks can be used directly without any
+              partitioning or filesystem formatting.</label>
+          </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question">
+          <p>21. Which of the following ECS instance configurations can NOT be changed without changing the instance
+            type?</p>
+          <div class="answers">
+            <label><input type="radio" name="q21" value="A"> A. Memory size</label>
+            <label><input type="radio" name="q21" value="B"> B. System disk size</label>
+            <label><input type="radio" name="q21" value="C"> C. Data disk size</label>
+            <label><input type="radio" name="q21" value="D"> D. Number of data disks</label>
+          </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question">
+          <p>22. Which open source technology is used for the layer 4 distribution method of Alibaba Cloud Classic Load
+            Balancer (CLB)?</p>
+          <div class="answers">
+            <label><input type="radio" name="q22" value="A"> A. LVS</label>
+            <label><input type="radio" name="q22" value="B"> B. Tengine</label>
+            <label><input type="radio" name="q22" value="C"> C. Nginx</label>
+            <label><input type="radio" name="q22" value="D"> D. Tomcat</label>
+          </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question">
+          <p>23. When you need to build a small or medium size relational database with a limited budget, the _____
+            Cloud Disk type is recommended.</p>
+          <div class="answers">
+            <label><input type="radio" name="q23" value="A"> A. ESSD PL0</label>
+            <label><input type="radio" name="q23" value="B"> B. ESSD PL1</label>
+            <label><input type="radio" name="q23" value="C"> C. ESSD PL2</label>
+            <label><input type="radio" name="q23" value="D"> D. ESSD PL3</label>
+          </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question">
+          <p>24. ECS Pay-As-You-Go bills are charged per _____.</p>
+          <div class="answers">
+            <label><input type="radio" name="q24" value="A"> A. Minute</label>
+            <label><input type="radio" name="q24" value="B"> B. Hour</label>
+            <label><input type="radio" name="q24" value="C"> C. Day</label>
+            <label><input type="radio" name="q24" value="D"> D. Month</label>
+          </div>
+        </div>
+
+
+        <!-- Question 25 -->
+        <!-- Question 25 -->
+        <div class="question">
+          <p>25. Before important operations such as upgrading applications or migrating business data, it is suggested
+            to create one or more:</p>
+          <div class="answers">
+            <label><input type="radio" name="q25" value="A"> A. Disk Images</label>
+            <label><input type="radio" name="q25" value="B"> B. Disk Snapshots</label>
+            <label><input type="radio" name="q25" value="C"> C. Disk Templates</label>
+            <label><input type="radio" name="q25" value="D"> D. EIPS</label>
+          </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question">
+          <p>26. When you create an ECS instance, which of the following disk image options is NOT shown on the purchase
+            page?</p>
+          <div class="answers">
+            <label><input type="radio" name="q26" value="A"> A. Private image</label>
+            <label><input type="radio" name="q26" value="B"> B. Custom image</label>
+            <label><input type="radio" name="q26" value="C"> C. Shared image</label>
+            <label><input type="radio" name="q26" value="D"> D. Public image</label>
+          </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question">
+          <p>27. A high-configuration I/O-optimized ECS instance should use a Cloud Disk to support high I/O concurrency
+            with higher data reliability.</p>
+          <div class="answers">
+            <label><input type="radio" name="q27" value="A"> A. SSD</label>
+            <label><input type="radio" name="q27" value="B"> B. Ultra</label>
+            <label><input type="radio" name="q27" value="C"> C. Basic</label>
+            <label><input type="radio" name="q27" value="D"> D. ESSD</label>
+          </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question">
+          <p>28. A Security Group is a.....that provides stateful packet inspection (SPI).</p>
+          <div class="answers">
+            <label><input type="radio" name="q28" value="A"> A. Virtual firewall</label>
+            <label><input type="radio" name="q28" value="B"> B. DDoS Attack Scrubber</label>
+            <label><input type="radio" name="q28" value="C"> C. Antivirus Tool</label>
+            <label><input type="radio" name="q28" value="D"> D. DNS Service</label>
+          </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question">
+          <p>29. Alibaba Cloud......instances are essentially virtual machines running Windows or Linux. Each instance
+            includes the basic resources needed to run a virtual machine, such as CPU, memory, networking and storage
+            capacity.</p>
+          <div class="answers">
+            <label><input type="radio" name="q29" value="A"> A. ECS</label>
+            <label><input type="radio" name="q29" value="B"> B. RDS</label>
+            <label><input type="radio" name="q29" value="C"> C. Auto Scaling</label>
+            <label><input type="radio" name="q29" value="D"> D. OSS</label>
+          </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question">
+          <p>30. www.bestcar.com is a newly launched social portal for exchanging automotive information. The portal is
+            based on PHP, including 10GB of images, and some JavaScript files. Currently, one single ECS instance is
+            used to host all the application content as well as a MySQL database. With the growing number of users from
+            different regions around the world, the portal is getting slower to load images or respond to user requests.
+            Moreover, there will be an additional 50GB image content uploaded to the portal every week. Which
+            combination of Alibaba Cloud services below can help resolve the storage and performance issue at the same
+            time?</p>
+          <div class="answers">
+            <label><input type="radio" name="q30" value="A"> A. OSS + CDN</label>
+            <label><input type="radio" name="q30" value="B"> B. OSS + MTS</label>
+            <label><input type="radio" name="q30" value="C"> C. OSS + RDS</label>
+            <label><input type="radio" name="q30" value="D"> D. OSS + ECS</label>
+          </div>
+        </div>
+
+        <!-- Question 31 -->
+        <div class="question">
+          <p>31. Server Load Balancer can be integrated with a Virtual Private Cloud (VPC). You can create an internal
+            load balancer to route traffic using private IP addresses within your VPC.</p>
+          <div class="answers">
+            <label><input type="radio" name="q31" value="True"> True</label>
+            <label><input type="radio" name="q31" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 32 -->
+        <div class="question">
+          <p>32. In Alibaba Cloud, Auto Scaling can automatically adjust the current ECS instance configuration
+            (including memory size, CPU, etc.) according to pre-defined rules to vertically extend the service capacity.
+          </p>
+          <div class="answers">
+            <label><input type="radio" name="q32" value="True"> True</label>
+            <label><input type="radio" name="q32" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 33 -->
+        <div class="question">
+          <p>33. Cloud Security Center installs an 'agent' component on the client. This agent also supports non-Alibaba
+            Cloud hosts.</p>
+          <div class="answers">
+            <label><input type="radio" name="q33" value="True"> True</label>
+            <label><input type="radio" name="q33" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 34 -->
+        <div class="question">
+          <p>34. Your custom ECS disk images can be shared with other Alibaba Cloud accounts.</p>
+          <div class="answers">
+            <label><input type="radio" name="q34" value="True"> True</label>
+            <label><input type="radio" name="q34" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 35 -->
+        <div class="question">
+          <p>35. Server Load Balancer ensures high availability for your applications by eliminating Single Point of
+            Failure (SPOF).</p>
+          <div class="answers">
+            <label><input type="radio" name="q35" value="True"> True</label>
+            <label><input type="radio" name="q35" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 36 -->
+        <div class="question">
+          <p>36. Alibaba Cloud ECS supports 'hot' upgrades of instance memory and CPU, without a reboot.</p>
+          <div class="answers">
+            <label><input type="radio" name="q36" value="True"> True</label>
+            <label><input type="radio" name="q36" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 37 -->
+        <div class="question">
+          <p>37. One of the primary advantages of the public cloud is that capacity can be purchased on-demand and used
+            right away, without the need to purchase and install hardware or install operating systems.</p>
+          <div class="answers">
+            <label><input type="radio" name="q37" value="True"> True</label>
+            <label><input type="radio" name="q37" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 38 -->
+        <div class="question">
+          <p>38. In the event that data in an RDS database is accidentally deleted or modified, we can manually restore
+            the data using data from previous physical backups.</p>
+          <div class="answers">
+            <label><input type="radio" name="q38" value="True"> True</label>
+            <label><input type="radio" name="q38" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 39 -->
+        <div class="question">
+          <p>39. Alibaba Cloud object storage (Object Storage Service, or OSS) provides massive, secured, relatively
+            low-cost, and highly reliable cloud storage service. Users can upload and download files to/from OSS via WEB
+            console or API.</p>
+          <div class="answers">
+            <label><input type="radio" name="q39" value="True"> True</label>
+            <label><input type="radio" name="q39" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 40 -->
+        <div class="question">
+          <p>40. You can directly manipulate date in ECS disk images without restoring the image onto a new disk.</p>
+          <div class="answers">
+            <label><input type="radio" name="q40" value="True"> True</label>
+            <label><input type="radio" name="q40" value="False"> False</label>
+          </div>
+        </div>
+
+        <!-- Question 41 -->
+        <div class="question">
+          <p>41. You deploy an application on Alibaba Cloud ECS and want to acquire basic security protection at the
+            lowest cost. Which of the following services can be activated for free? (Number of correct answers: 2)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q41" value="A"> A. Anti-DDos Origin Basic Edition</label>
+            <label><input type="checkbox" name="q41" value="B"> B. Anti-DDoS Pro/Premium</label>
+            <label><input type="checkbox" name="q41" value="C"> C. WAF</label>
+            <label><input type="checkbox" name="q41" value="D"> D. Cloud Monitor</label>
+          </div>
+        </div>
+
+        <!-- Question 42 -->
+        <div class="question">
+          <p>42. Company A builds a sales management platform based on Alibaba Cloud services, using 3 ECS instances.
+            One of the ECS instance has MySQL installed as the database server of the platform, the other two are used
+            as web servers. Due to a rapid increase in the number of employees at Company A, the performance of the
+            platform is challenged, and response times become long. Through CloudMonitor, it is found that the average
+            CPU usage reaches 70% for the two web server ECS instances and the database load reaches 75% for the
+            database server ECS instance. In this situation, which Alibaba Cloud services can Company A use to help
+            improve performance? (Number of correct answers: 2)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q42" value="A"> A. Use content delivery network, CDN, to accelerate the
+              caching of the platform's CSS, JavaScript, and HTML content.</label>
+            <label><input type="checkbox" name="q42" value="B"> B. Add a load balancer instance and increase the number
+              of ECS instances to reduce the workload on the current ECS instances.</label>
+            <label><input type="checkbox" name="q42" value="C"> C. Use RDS to replace the existing self-built database
+              to obtain better database performance. Create RDS read-only instances to handle read-only requests,
+              thereby reducing the workload on the primary RDS instance.</label>
+            <label><input type="checkbox" name="q42" value="D"> D. Remove ECS and use OSS instead.</label>
+          </div>
+        </div>
+
+        <!-- Question 43 -->
+        <div class="question">
+          <p>43. What descriptions of Server Load Balancer (CLB/ALB) are correct? (Number of correct answers: 4)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q43" value="A"> A. Server Load Balancer (CLB/ALB) Instance is configured
+              above ECS instances to receive incoming traffic.</label>
+            <label><input type="checkbox" name="q43" value="B"> B. Server Load Balancer (CLB/ALB) distributes incoming
+              traffic across multiple ECS instances.</label>
+            <label><input type="checkbox" name="q43" value="C"> C. Server Load Balancers (CLB/ALB) can detect unhealthy
+              instances.</label>
+            <label><input type="checkbox" name="q43" value="D"> D. Server Load Balancers (CLB/ALB) routes traffic to
+              healthy instances only.</label>
+            <label><input type="checkbox" name="q43" value="E"> E. Server Load Balancer (CLB/ALB) can process the
+              traffic without ECS instances.</label>
+            <label><input type="checkbox" name="q43" value="F"> F. Server Load Balancers (CLB/ALB) can only work as a
+              public IP entrance.</label>
+          </div>
+        </div>
+
+        <!-- Question 44 -->
+        <div class="question">
+          <p>44. Which of the following operations are possible with ECS Disk Snapshots? (Number of correct answers: 2)
+          </p>
+          <div class="answers">
+            <label><input type="checkbox" name="q44" value="A"> A. Duplicate</label>
+            <label><input type="checkbox" name="q44" value="B"> B. Roll-back</label>
+            <label><input type="checkbox" name="q44" value="C"> C. Download</label>
+            <label><input type="checkbox" name="q44" value="D"> D. Delete</label>
+          </div>
+        </div>
+
+        <!-- Question 45 -->
+        <div class="question">
+          <p>45. You can use the ECS console to configure. (Number of correct answers: 3)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q45" value="A"> A. Instance Types</label>
+            <label><input type="checkbox" name="q45" value="B"> B. Disks</label>
+            <label><input type="checkbox" name="q45" value="C"> C. Operating Systems</label>
+            <label><input type="checkbox" name="q45" value="D"> D. Physical hardware</label>
+          </div>
+        </div>
+
+        <!-- Question 46 -->
+        <div class="question">
+          <p>46. Which of the following Cloud Disk Types are provided by Alibaba Cloud? (Number of correct answers: 3)
+          </p>
+          <div class="answers">
+            <label><input type="checkbox" name="q46" value="A"> A. Standard SSD</label>
+            <label><input type="checkbox" name="q46" value="B"> B. Enhanced SSD PL0</label>
+            <label><input type="checkbox" name="q46" value="C"> C. Virtual Disk</label>
+            <label><input type="checkbox" name="q46" value="D"> D. Budget Disk</label>
+            <label><input type="checkbox" name="q46" value="E"> E. Database Disk</label>
+            <label><input type="checkbox" name="q46" value="F"> F. Enhanced SSD PL1</label>
+          </div>
+        </div>
+
+        <!-- Question 47 -->
+        <div class="question">
+          <p>47. When carrying out health checks on ECS instances, Application Load Balancer (ALB) allows health checks
+            to be defined based on (Number of correct answers: 3)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q47" value="A"> A. IP Address</label>
+            <label><input type="checkbox" name="q47" value="B"> B. Port</label>
+            <label><input type="checkbox" name="q47" value="C"> C. Protocol</label>
+            <label><input type="checkbox" name="q47" value="D"> D. Path</label>
+          </div>
+        </div>
+
+        <!-- Question 48 -->
+        <div class="question">
+          <p>48. Alibaba Cloud Relational Database Service (RDS) is a stable, reliable, and elastic online database
+            service. Compared to a self-built database, RDS has several advantages, including (Number of correct
+            answers: 3)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q48" value="A"> A. No need to guess your resource needs in advance: pay
+              only for what you use.</label>
+            <label><input type="checkbox" name="q48" value="B"> B. PaaS Service: OS and hardware maintenance are handled
+              by Alibaba Cloud.</label>
+            <label><input type="checkbox" name="q48" value="C"> C. Built-in free DDoS protection up to 20 Gbps.</label>
+            <label><input type="checkbox" name="q48" value="D"> D. Flexible upgrade: upgrade your RDS instance as
+              needed.</label>
+          </div>
+        </div>
+
+        <!-- Question 49 -->
+        <div class="question">
+          <p>49. Which of the following OSS operations will generate traffic charges? (Number of correct answers: 3)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q49" value="A"> A. Upload files through the Alibaba Cloud
+              intranet.</label>
+            <label><input type="checkbox" name="q49" value="B"> B. Download files via public IP.</label>
+            <label><input type="checkbox" name="q49" value="C"> C. Download files to your personal or company
+              computer.</label>
+            <label><input type="checkbox" name="q49" value="D"> D. Read files through the OSS API.</label>
+          </div>
+        </div>
+
+
+        <!-- Question 50 -->
+        <!-- Question 50 -->
+        <div class="question">
+          <p>50. Auto Scaling is a management service that can automatically adjust elastic computing resources based on
+            your business needs and policies. Which of the following application scenarios are suitable for Auto
+            Scaling? (Number of correct answers: 3)</p>
+          <div class="answers">
+            <label><input type="checkbox" name="q50" value="A"> A. You need to flexibly adjust elastic computing
+              resources based on your business needs, and ECS instances will be added seamlessly to address traffic
+              peaks and surges.</label>
+            <label><input type="checkbox" name="q50" value="B"> B. You need to flexibly adjust elastic computing
+              resources based on your business needs, and ECS instances will be reduced automatically to save costs when
+              business needs drop.</label>
+            <label><input type="checkbox" name="q50" value="C"> C. When an ECS instance fails, Auto Scaling will create
+              a new ECS instance to replace it.</label>
+            <label><input type="checkbox" name="q50" value="D"> D. You want to flexibly adjust elastic computing
+              resources based on your business needs, and ECS instances will be automatically upgraded (with more
+              Memory, more powerful CPU) when needed.</label>
+          </div>
+        </div>
+        <div class="question">
+          <p>51. Using a cloud computing service is simple and straightforward. One can choose the instance with desired
+            specification, finish payment and then use it right away. Moreover, the underlying physical machines are
+            managed by cloud service providers and transparent to users.</p>
+          <div class="answers">
+            <label><input type="radio" name="q1" value="A"> A. TRUE</label>
+            <label><input type="radio" name="q1" value="B"> B. FALSE</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+          <p>52. A/An _________________ is a copy of data on a disk at a certain point in time.</p>
+          <div class="answers">
+            <label><input type="radio" name="q2" value="A"> A. image</label>
+            <label><input type="radio" name="q2" value="B"> B. snapshot</label>
+            <label><input type="radio" name="q2" value="C"> C. template</label>
+            <label><input type="radio" name="q2" value="D"> D. EIP</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+          <p>53. Multiple lower-configuration I/O-optimized ECS instances can be used with ___________ to deliver a
+            high-availability architecture.</p>
+          <div class="answers">
+            <label><input type="radio" name="q3" value="A"> A. Server Load Balancer</label>
+            <label><input type="radio" name="q3" value="B"> B. RDS</label>
+            <label><input type="radio" name="q3" value="C"> C. Auto Scaling</label>
+            <label><input type="radio" name="q3" value="D"> D. OSS</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+          <p>54. What is the full name of ECS?</p>
+          <div class="answers">
+            <label><input type="radio" name="q4" value="A"> A. Elastic Compute Service</label>
+            <label><input type="radio" name="q4" value="B"> B. Elastic Computing Server</label>
+            <label><input type="radio" name="q4" value="C"> C. Elastic Cost Server</label>
+            <label><input type="radio" name="q4" value="D"> D. Elastic Communication Server</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+          <p>55. Alibaba Cloud does not support Intranet communication between products that are not in the same region,
+            which does not mean ______________?</p>
+          <div class="answers">
+            <label><input type="radio" name="q5" value="A"> A. ECS instances in different regions cannot communicate
+              with each other on the intranet.</label>
+            <label><input type="radio" name="q5" value="B"> B. ECS instances and other products in different regions,
+              such as ApsaraDB for RDS and OSS instances, cannot communicate with each other on the intranet.</label>
+            <label><input type="radio" name="q5" value="C"> C. Server Load Balancer cannot be deployed for ECS instances
+              in various regions.</label>
+            <label><input type="radio" name="q5" value="D"> D. Server Load Balancer can be deployed for ECS instances in
+              various regions.</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+          <p>56. If you are running an online ticket booking service with relatively fixed traffic, then which kind of
+            charging mode is more suitable for you?</p>
+          <div class="answers">
+            <label><input type="radio" name="q6" value="A"> A. Pay-As-You-Go</label>
+            <label><input type="radio" name="q6" value="B"> B. Prepaid</label>
+            <label><input type="radio" name="q6" value="C"> C. Paypal-pay</label>
+            <label><input type="radio" name="q6" value="D"> D. bitcoin-pay</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+          <p>57. When we talk about the 'Elastic' feature for ECS product, we are not talking about _____________.</p>
+          <div class="answers">
+            <label><input type="radio" name="q7" value="A"> A. Elastic Computing</label>
+            <label><input type="radio" name="q7" value="B"> B. Elastic Storage</label>
+            <label><input type="radio" name="q7" value="C"> C. Elastic Network</label>
+            <label><input type="radio" name="q7" value="D"> D. Elastic Administration</label>
+          </div>
+          <p>Answer: D</p>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+          <p>58. Your website has high volume of traffic and sudden spikes for a very short time. In this scenario,
+            ______________ can manage traffic peak efficiently and maintain a consistent user experience.</p>
+          <div class="answers">
+            <label><input type="radio" name="q8" value="A"> A. Server Load Balancer</label>
+            <label><input type="radio" name="q8" value="B"> B. Auto Scaling</label>
+            <label><input type="radio" name="q8" value="C"> C. RDS</label>
+            <label><input type="radio" name="q8" value="D"> D. VPC</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+          <p>59. Your website has oscillating traffic peaks that are difficult to predict in advance. In this scenario,
+            it is recommended to use SLB and __________________ together with ECS.</p>
+          <div class="answers">
+            <label><input type="radio" name="q9" value="A"> A. RDS</label>
+            <label><input type="radio" name="q9" value="B"> B. Auto Scaling</label>
+            <label><input type="radio" name="q9" value="C"> C. VPC</label>
+            <label><input type="radio" name="q9" value="D"> D. MaxCompute</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+          <p>60. ___________________ is a ready-to-use service that seamlessly integrates with Elastic Compute Service
+            (ECS) to manage varying traffic levels without manual intervention.</p>
+          <div class="answers">
+            <label><input type="radio" name="q10" value="A"> A. Server Load Balancer</label>
+            <label><input type="radio" name="q10" value="B"> B. OSS</label>
+            <label><input type="radio" name="q10" value="C"> C. RDS</label>
+            <label><input type="radio" name="q10" value="D"> D. VPC</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question">
+          <p>61. When using Alibaba Cloud SLB, you can set different weights for backend ECS instances. The higher the
+            weight of a backend ECS instance, the more load will be assigned to it. If an SLB instance has 5 ECS
+            instances in the backend server pool, all of which are healthy. Among these 5 ECS instances, the weight of
+            ecs_inst1 is set to 100. Which of the following statements is correct?</p>
+          <div class="answers">
+            <label><input type="radio" name="q11" value="A"> A. We do not know the weight settings of the remaining 4
+              ECS instances, so we cannot tell what would happen.</label>
+            <label><input type="radio" name="q11" value="B"> B. 100% of loads will be assigned to ecs_inst1, and the
+              rest 4 ECS instances will stay idle.</label>
+            <label><input type="radio" name="q11" value="C"> C. Based on SLB’s working mechanism, approximately 20% of
+              loads will be assigned to ecs_inst1.</label>
+            <label><input type="radio" name="q11" value="D"> D. Based on request level parameters of external requests,
+              all requests with a request level parameter of 100 will be transferred to ecs_inst1.</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question">
+          <p>62. Server Load Balancer can help protect from ___________________ attack.</p>
+          <div class="answers">
+            <label><input type="radio" name="q12" value="A"> A. DDoS</label>
+            <label><input type="radio" name="q12" value="B"> B. Virus</label>
+            <label><input type="radio" name="q12" value="C"> C. Ransomware</label>
+            <label><input type="radio" name="q12" value="D"> D. SQL injection</label>
+          </div>
+          <p>Answer: A</p>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question">
+          <p>63. Which of the following statements to OSS bucket is not correct?</p>
+          <div class="answers">
+            <label><input type="radio" name="q13" value="A"> A. Every user can create more than one bucket</label>
+            <label><input type="radio" name="q13" value="B"> B. Bucket name can be changed after creation</label>
+            <label><input type="radio" name="q13" value="C"> C. Every bucket should have a unique name</label>
+            <label><input type="radio" name="q13" value="D"> D. There is no limitation to objects number inside one
+              bucket</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question">
+          <p>64. www.company.com is a newly launched social portal for exchanging automotive information. The portal is
+            based on PHP, including 10GB of images, and some JavaScripts files. Currently one single ECS instance is
+            used to host all the application content as well as a MySQL database. With the growing number of users, the
+            portal is getting slower to load images or respond to user requests. Moreover, there will be additional 50GB
+            image content uploaded to the portal every week. Which combination of Alibaba Cloud services below can help
+            resolve the storage and performance issue at the same time?</p>
+          <div class="answers">
+            <label><input type="radio" name="q14" value="A"> A. OSS + CDN combination</label>
+            <label><input type="radio" name="q14" value="B"> B. OSS + MTS combination</label>
+            <label><input type="radio" name="q14" value="C"> C. OSS + RDS combination</label>
+            <label><input type="radio" name="q14" value="D"> D. OSS + ECS combination</label>
+          </div>
+          <p>Answer: D</p>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question">
+          <p>65. Which method is not supported by OSS to create a bucket?</p>
+          <div class="answers">
+            <label><input type="radio" name="q15" value="A"> A. through OSS API/SDK</label>
+            <label><input type="radio" name="q15" value="B"> B. through ECS instance filesystem directory
+              operation</label>
+            <label><input type="radio" name="q15" value="C"> C. through oss cmd tool</label>
+            <label><input type="radio" name="q15" value="D"> D. through cloud console</label>
+          </div>
+          <p>Answer: C</p>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question">
+          <p>66. A large shopping mall deploys a new video surveillance system. The five-floor building in which the
+            mall is located installed 35 HD cameras to monitor the major exits. The surveillance system is deployed on
+            an ECS instance, which has four 2 TB data disks to store video data. However, video data grows rapidly and
+            the engineers find that the ECS will run out of storage space within 2 weeks. In this case, _____________
+            product is thought to be the best solution for addressing the storage challenge while ensuring quick access
+            to historical video data when needed.</p>
+          <div class="answers">
+            <label><input type="radio" name="q16" value="A"> A. Container Service</label>
+            <label><input type="radio" name="q16" value="B"> B. ECS</label>
+            <label><input type="radio" name="q16" value="C"> C. OSS</label>
+            <label><input type="radio" name="q16" value="D"> D. CDN</label>
+          </div>
+          <p>Answer: C</p>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question">
+          <p>67. Which of the following statements about file uploading to OSS strategy is not correct?</p>
+          <div class="answers">
+            <label><input type="radio" name="q17" value="A"> A. All file uploading method provided by Alibaba Cloud OSS
+              service will support resuming from break point.</label>
+            <label><input type="radio" name="q17" value="B"> B. If you are uploading some small files kurang dari 1m you can
+                choose using put method to be able finish uploading in one http request.</label>
+                <label><input type="radio" name="q17" value="C"> C. If you are using OSS to store some log files which
+                  are continuously being updated, you better choose streaming method to be able to append to one
+                  existing object instead of overwriting.</label>
+                <label><input type="radio" name="q17" value="D"> D. If you need to upload very large file you better use
+                  multi-part uploading to get the capability of resuming from break point.</label>
+          </div>
+          <p>Answer: C</p>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question">
+          <p>68. Which of the following scenarios is applicable to use RDS read-only instances?</p>
+          <div class="answers">
+            <label><input type="radio" name="q18" value="A"> A. Reduces the write pressure on the RDS primary
+              instance.</label>
+            <label><input type="radio" name="q18" value="B"> B. Reduces the read pressure on the RDS primary
+              instance.</label>
+            <label><input type="radio" name="q18" value="C"> C. Implements data backtracking for the last two
+              days.</label>
+            <label><input type="radio" name="q18" value="D"> D. Improves RDS storage capabilities.</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question">
+          <p>69. SQL injection is a common application layer attack, usually through building special input parameters
+            and pass it to web applications to steal or sabotage the application data. Which of the following is the
+            target for SQL injection?</p>
+          <div class="answers">
+            <label><input type="radio" name="q19" value="A"> A. Web application</label>
+            <label><input type="radio" name="q19" value="B"> B. Database</label>
+            <label><input type="radio" name="q19" value="C"> C. Confidential files on the server</label>
+            <label><input type="radio" name="q19" value="D"> D. Pictures on server</label>
+          </div>
+          <p>Answer: B</p>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question">
+          <p>70. A company wants to use Alibaba Cloud service to replace their self-built database, which of the
+            following services should it choose?</p>
+          <div class="answers">
+            <label><input type="radio" name="q20" value="A"> A. AsparaDB for RDS</label>
+            <label><input type="radio" name="q20" value="B"> B. Server Load Balancer (SLB)</label>
+            <label><input type="radio" name="q20" value="C"> C. Alibaba Cloud CDN (Content Delivery Network)</label>
+            <label><input type="radio" name="q20" value="D"> D. Deploy more ECS instances</label>
+          </div>
+
+          <p>Answer: A</p>
+
+        </div>
+           <!-- Question 21 -->
+    <div class="question">
+      <p>71. Which of the following is not the database type supported by RDS?</p>
+      <div class="answers">
+          <label><input type="radio" name="q21" value="A"> A. MySQL</label>
+          <label><input type="radio" name="q21" value="B"> B. SQL Server</label>
+          <label><input type="radio" name="q21" value="C"> C. Postgre SQL</label>
+          <label><input type="radio" name="q21" value="D"> D. Oracle database</label>
+      </div>
+      <p>Answer: D</p>
+      <p>Reference: <a href="https://aws.amazon.com/rds/features/">AWS RDS Features</a></p>
+  </div>
+
+  <!-- Question 22 -->
+  <div class="question">
+      <p>72. Which of the following statements is wrong when comparing RDS with self-built database?</p>
+      <div class="answers">
+          <label><input type="radio" name="q22" value="A"> A. RDS features a high availability of 99.95% while self-built database requires you to implement data protection, primary-standby replication, and RAID all by yourself.</label>
+          <label><input type="radio" name="q22" value="B"> B. RDS provides automatic backup while self-built database requires you to prepare storage space for backup copies and regularly verify that these copies can be restored.</label>
+          <label><input type="radio" name="q22" value="C"> C. Self-built database supports quick deployment and elastic scaling.</label>
+          <label><input type="radio" name="q22" value="D"> D. RDS requires no O&M while self-built database requires a dedicated DBA for maintenance, which results in high HR cost.</label>
+      </div>
+      <p>Answer: C</p>
+  </div>
+
+  <!-- Question 23 -->
+  <div class="question">
+      <p>73. A customer uses Alibaba Cloud Auto Scaling service and creates a scaling group. He/she sets the “Minimum number of instances” to 6 and “Maximum number of instances” to 8. After correctly configuring scaling settings, the customer adds a scaling rule “Remove 5 ECS instances”, and creates a scheduled task based on this rule. And then, the customer checks the scaling group and see it already contains 8 valid ECS instances, he/she then enables this scaling group immediately. How many ECS instances are left in the scaling group when the scheduled task is activated once?</p>
+      <div class="answers">
+          <label><input type="radio" name="q23" value="A"> A. One</label>
+          <label><input type="radio" name="q23" value="B"> B. Six</label>
+          <label><input type="radio" name="q23" value="C"> C. Zero</label>
+          <label><input type="radio" name="q23" value="D"> D. Five</label>
+      </div>
+      <p>Answer: C</p>
+  </div>
+
+  <!-- Question 24 -->
+  <div class="question">
+      <p>74. A customer uses Alibaba Cloud Auto Scaling service and creates a scaling group. He/she sets the “Minimum number of instances” to 6 and “Maximum number of instances” to 8. After correctly configuring scaling settings, the customer adds a scaling rule “Adjust to 10 ECS instances”, and creates a scheduled task based on this rule. And then, the customer checks the scaling group and see it already contains 6 valid ECS instances, he/she then enables this scaling group immediately. How many ECS instances are left in the scaling group when the scheduled task is activated once?</p>
+      <div class="answers">
+          <label><input type="radio" name="q24" value="A"> A. Eight</label>
+          <label><input type="radio" name="q24" value="B"> B. Ten</label>
+          <label><input type="radio" name="q24" value="C"> C. Six</label>
+          <label><input type="radio" name="q24" value="D"> D. Five</label>
+      </div>
+      <p>Answer: B</p>
+  </div>
+
+  <!-- Question 25 -->
+  <div class="question">
+      <p>75. Auto Scaling is a management service that can automatically adjust elastic computing resources based on your business needs and policies. Which of the following is not the feature supported by Alibaba Cloud Auto Scaling?</p>
+      <div class="answers">
+          <label><input type="radio" name="q25" value="A"> A. Elastic Scale-Out</label>
+          <label><input type="radio" name="q25" value="B"> B. Elastic Scale-In</label>
+          <label><input type="radio" name="q25" value="C"> C. Elastic Self-Health</label>
+          <label><input type="radio" name="q25" value="D"> D. Elastic Self-Diagnostic</label>
+      </div>
+      <p>Answer: D</p>
+      <p>Reference: <a href="https://www.alibabacloud.com/product/auto-scaling">Alibaba Cloud Auto Scaling</a></p>
+  </div>
+
+  <!-- Question 26 -->
+  <div class="question">
+      <p>76. Auto Scaling is a management service that can automatically adjust elastic computing resources based on your business needs and policies. It supports adding an existing ECS instance into the scaling group but imposes certain requirements on instance region. In this case, which of the following statements is true?</p>
+      <div class="answers">
+          <label><input type="radio" name="q26" value="A"> A. The instance and the scaling group must be in the same region but not necessarily the same zone.</label>
+          <label><input type="radio" name="q26" value="B"> B. The instance and the scaling group must be in the same region and zone.</label>
+          <label><input type="radio" name="q26" value="C"> C. The instance and the scaling group can be in different regions and zones.</label>
+          <label><input type="radio" name="q26" value="D"> D. Each scaling group can span up to two regions. After adding the ECS instance, the number of regions of all the ECS instances in the scaling group must be no greater than two.</label>
+      </div>
+      <p>Answer: A</p>
+  </div>
+
+  <!-- Question 27 -->
+  <div class="question">
+      <p>77. You built an online shop using Alibaba Cloud services (ECS, RDS, etc.) and very soon you’ll have a campaign that every customer that invites 3 friends will get a 50% off coupon. To avoid HTTP flood attacks and ensure only genuine customers (not bots) joining the event, which security product should you choose?</p>
+      <div class="answers">
+          <label><input type="radio" name="q27" value="A"> A. Anti-DDoS Basic</label>
+          <label><input type="radio" name="q27" value="B"> B. Anti-DDoS Pro</label>
+          <label><input type="radio" name="q27" value="C"> C. WAF</label>
+          <label><input type="radio" name="q27" value="D"> D. Server Guard</label>
+      </div>
+      <p>Answer: C</p>
+      <p>Explanation: After adding your website to the WAF protection list, you can enable HTTP Flood protection and select an appropriate protection mode for the website.</p>
+      <p>Reference: <a href="https://www.alibabacloud.com/help/doc-detail/43443.htm">Alibaba Cloud WAF</a></p>
+  </div>
+
+  <!-- Question 28 -->
+  <div class="question">
+      <p>78. Alibaba Cloud provides anti-DDoS products of different levels. If the service availability needs to be kept at 99.9% or higher under DDoS attacks, which of the following is the MOST suitable product?</p>
+      <div class="answers">
+          <label><input type="radio" name="q28" value="A"> A. Anti-DDoS Service Basic</label>
+          <label><input type="radio" name="q28" value="B"> B. Managed Security Service</label>
+          <label><input type="radio" name="q28" value="C"> C. Situation Awareness</label>
+          <label><input type="radio" name="q28" value="D"> D. Anti-DDoS Service Pro</label>
+      </div>
+      <p>Answer: A</p>
+      <p>Reference: <a href="https://www.alibabacloud.com/product/anti-ddos">Alibaba Cloud Anti-DDoS</a></p>
+  </div>
+
+  <!-- Question 29 -->
+  <div class="question">
+      <p>79. Anti-DDoS is one of the major features in Alibaba Cloud Security Service. Many websites have experienced different types of DDoS attacks, an accurate understanding of DDoS is crucial to protecting websites. Which of the following descriptions about DDoS attack is the most accurate one?</p>
+      <div class="answers">
+          <label><input type="radio" name="q29" value="A"> A. The main target for DDoS attack is the database.</label>
+          <label><input type="radio" name="q29" value="B"> B. DDoS attack will try to crack the password through a large number of attempts.</label>
+          <label><input type="radio" name="q29" value="C"> C. The main purpose of DDoS attack is to make the target server unable to provide service normally, which is one of the network attacks that are most difficult to defend.</label>
+          <label><input type="radio" name="q29" value="D"> D. The purpose of DDoS attack is to steal confidential information.</label>
+      </div>
+      <p>Answer: C</p>
+  </div>
+
+  <!-- Question 30 -->
+  <div class="question">
+      <p>80. Alibaba Cloud China Connect is a service that can help international companies do business in China. Which of the following services is not included in China Connect?</p>
+      <div class="answers">
+          <label><input type="radio" name="q30" value="A"> A. Web hosting</label>
+          <label><input type="radio" name="q30" value="B"> B. ICP Support</label>
+          <label><input type="radio" name="q30" value="C"> C. Office registration support</label>
+          <label><input type="radio" name="q30" value="D"> D. Connect your service with Alibaba Group ecosystem</label>
+      </div>
+      <p>Answer: D</p>
+  </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      </main>
+      <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Anggara Pratama. All rights reserved.</p>
+            <p><a href="https://github.com/apgaara" target="_blank">Visit my GitHub</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+</form>
+</main>
+</body>
+
+</html>
