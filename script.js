@@ -79,5 +79,8 @@ function submitQuiz() {
         }
     }
 
-    document.getElementById('result').innerText = `You scored ${score} out of ${Object.keys(correctAnswers).length}`;
-}
+    const totalQuestions = Object.keys(correctAnswers).length;
+    const percentage = (score / totalQuestions) * 100;
+
+    document.getElementById('result').innerText = `You scored ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`;
+} 
